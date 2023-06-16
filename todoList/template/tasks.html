@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      
+      .button1 {
+        background-color: black; 
+        color: aquamarine; 
+        border: 2px solid #7FFFD4;
+      }
+      
+      .button1:hover {
+        background: aquamarine;
+        color: black;
+        font-weight: bold;
+      }
+
+      .button2 {
+        background-color: black; 
+        color: aquamarine; 
+        border: 2px solid #7FFFD4;
+      }
+      
+      .button2:hover {
+        background: aquamarine;
+        color: black;
+        font-weight: bold;
+      }
+
+      </style>
+  </head>
+  <body style="background-color:black;">
+    <p style="text-align:center;"><a href="/"><button class="button button1">Home</button></a>
+    <a href="/tasks"><button class="button button2">Tasks</button></a>
+
+    <table class="table" style = "color: aquamarine;">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+    
+    {% block body %}
+    {% endblock body %}
+
+  </body>
+</html>
