@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Details
+{% endblock title %}
+
+{% block body %}
+<!DOCTYPE html>  
+ <html>  
+ <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>  
+</head>  
+ <body >  
+     <h2 style="background-color: black;
+     color:aquamarine; 
+     text-align:center;
+     font-size:50px;">Contact Details</h2>  
+    <form method="post" action="/contact">  
+    {% csrf_token %}
+      
+        <fieldset>  
+        <legend style="background-color: black;
+        color:aquamarine;
+        text-align:center; 
+        font-size:50px;">User Contact information</legend> 
+        <label style="background-color: black;
+                      color:aquamarine; 
+                      text-align:center;
+                      font-size:30px;">Enter your full Name</label><br>  
+        <input type="text" name="name" placeholder="  Enter Your Name" size=30 style="height: 30px;
+                                                                                    width: 240px;
+                                                                                    border-radius:5px 25px 25px;"><br>  
+         <label style="background-color: black;
+                       color:aquamarine; 
+                       text-align:center;
+                    font-size:30px;">Enter your Phone Number</label><br>  
+         <input type="number" name="number" placeholder="  Enter Your Number" style="height: 30px;
+                                                                                  width: 240px;
+                                                                                  border:none;
+                                                                                  border-radius:5px 25px 25px;"><br>  
+          <h1 style="background-color: black;
+          color:aquamarine; 
+          font-size:30px;">Description:</h1>  
+         <textarea name="desc" id="" cols="60" placeholder="  Enter Your Suggestions" rows="10" style="height: 250px;
+                                                                                                     width: 300px;
+                                                                                                     border:none;
+                                                                                                     border-radius:5px 25px 25px;"></textarea><br>  
+         <button class="button button3">Submit</button> 
+     </fieldset>  
+  </form>  
+ </body>  
+</html>
+{% endblock body %}

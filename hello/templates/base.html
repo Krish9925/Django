@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      
+      .button1 {
+        background-color: black; 
+        color: aquamarine; 
+        border: 2px solid #7FFFD4;
+      }
+      
+      .button1:hover {
+        background: aquamarine;
+        color: black;
+        font-weight: bold;
+      }
+
+      .button2 {
+        background-color: black; 
+        color: aquamarine; 
+        border: 2px solid #7FFFD4;
+      }
+      
+      .button2:hover {
+        background: aquamarine;
+        color: black;
+        font-weight: bold;
+      }
+
+      .button3 {
+        background-color: black; 
+        color: aquamarine; 
+        border: 2px solid #7FFFD4;
+      }
+      
+      .button3:hover {
+        background: aquamarine;
+        color: black;
+        font-weight: bold;
+      }
+
+      .button4 {
+        background-color: black;
+        color: aquamarine;
+        border: 2px solid #7FFFD4;
+      }
+      
+      .button4:hover {
+        background: aquamarine;
+        color: black;
+        font-weight: bold;
+      }
+
+      .button5 {
+        background-color: black;
+        color: aquamarine;
+        border: 2px solid #7FFFD4;
+      }
+
+      .button5:hover {
+        background: aquamarine;
+        color: black;
+        font-weight: bold;
+      }
+
+      </style>
+  </head>
+  <body style="background-color: black;">
+    <p style="text-align:center;"><a href="/"><button class="button button1">Home</button></a>
+    <a href="/video"><button class="button button3">Pricing</button></a>
+    <a href="/blog"><button class="button button4">Blogs</button></a>
+    <a href="/portfolio"><button class="button button5">Portfolio</button></a>
+    <a href="/contact"><button class="button button2">Contact</button></a> </p>
+    {% block body %}
+    {% endblock body %}
+
+  </body>
+</html>
